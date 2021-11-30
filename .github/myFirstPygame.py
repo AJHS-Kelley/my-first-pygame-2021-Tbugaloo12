@@ -28,3 +28,5 @@ textRect = text.get_rec()
 textRect.centrarx = windowSurface.get_rect().centerx
 textRect.centrary = windowSurface.get_rect().centery
 
+# Fill in window background color
+windowSurface. fill(TASTYORANGE)
