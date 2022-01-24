@@ -1,5 +1,6 @@
-# PyGame Collision Detection Practice, Terrell Fuller, January 24, 2022, 12:04, v0.4
+# PyGame Collision Detection Practice, Terrell Fuller, January 24, 2022, 12:04, v0.5
 
+from pickle import FALSE
 import pygame, sys, random
 from pygame.locals import *
 
@@ -27,5 +28,15 @@ foods = []
 
 for i in range(20):
     foods.append(pygame.Rect(random.randint)(0, WINDOWWIDTH - FOODSIZE),random.radiant(0, WINDOWWIEGHT - FOODSIZE), FOODSIZE, FOODSIZE))
+
+# Movement Variables
+moveLeft = FALSE
+moveRight = False
+moveUp = False
+moveDown = False
+
+MOVESPEED = 6
+
+
 
 
