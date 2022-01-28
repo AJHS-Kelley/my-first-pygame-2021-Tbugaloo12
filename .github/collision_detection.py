@@ -1,4 +1,4 @@
-# PyGame Collision Detection Practice, Terrell Fuller, January 24, 2022, 12:04, v0.5
+# PyGame Collision Detection Practice, Terrell Fuller, January 24, 2022, 12:04, v0.6
 
 from pickle import FALSE
 import pygame, sys, random
@@ -37,6 +37,26 @@ moveDown = False
 
 MOVESPEED = 6
 
+# Run the game loop.
 
-
-
+while True:
+    # Check for events.
+    for event in pygame.event.get():
+        if event.type == Quit:
+            pygame.quit()
+            sys.exit()
+         if event.type == KEYDOWN:
+             # Change the keyboard variables
+              if event.key == K_LEFT or event. key == K_a:
+                   moveRight = False
+                   moveLeft =True
+              if event.key == K_RIGHT or event.key == K_d: 
+                  moveLeft = False
+                  moveRight = True 
+              if event.key == K_UP or event.key == K_w:
+                  moveDown = False
+                  moveUp = True
+              if event.key == K_DOWN or event.key == K_s:
+                  moveUp = False 
+                  moveDown = True 
+                          
